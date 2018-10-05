@@ -1,0 +1,15 @@
+*.DotSettings
+_ReSharper*/
+*ReSharper*
+obj/
+[Bb]in
+*.suo
+*.bak
+*.cache
+*.nupkg
+packages/
+*.sln.DotSettings.*
+.idea/
+.output/
+*.user
+.vs/

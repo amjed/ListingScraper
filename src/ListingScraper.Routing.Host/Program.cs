@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ListingScraper.Host
+namespace ListingScraper.Routing.Host
 {
     class Program
     {

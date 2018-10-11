@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Parser\" />
-    <Folder Include="Page\" />
+    <PackageReference Include="dcsoup" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ListingScaper.Entities\ListingScraper.Entities.csproj" />
   </ItemGroup>
 
 </Project>

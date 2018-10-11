@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ListingScraper.Host
+namespace ListingScraper.PageDownload.Host
 {
     class Program
     {

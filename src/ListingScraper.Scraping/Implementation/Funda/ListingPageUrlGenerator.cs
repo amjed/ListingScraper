@@ -1,4 +1,4 @@
-﻿namespace ListingScraper.Domain.Implementation.Funda
+﻿namespace ListingScraper.Scraping.Implementation.Funda
 {
     public class ListingPageUrlGenerator: BaseListingPageUrlGenerator
     {
@@ -6,7 +6,7 @@
 
         public ListingPageUrlGenerator()
         {
-            BaseUrl = "https://www.funda.nl/en/huur/amsterdam/0-1250/+10km/p{0}/";
+            BaseUrl = "https://www.funda.nl/en/huur/amsterdam/500-1250/+10km/p{0}/";
         }
     }
 }

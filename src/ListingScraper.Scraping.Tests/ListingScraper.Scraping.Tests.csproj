@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Funda\Listings\" />
+    <Folder Include="Pages\Funda\Items\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ListingScaper.Entities\ListingScraper.Entities.csproj" />
+    <ProjectReference Include="..\ListingScraper.Scraping\ListingScraper.Scraping.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Pages\Funda\Items\0.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Pages\Funda\Listings\0.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

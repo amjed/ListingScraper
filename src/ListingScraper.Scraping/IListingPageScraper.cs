@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using ListingScraper.Entities;
 
-namespace ListingScraper.Domain
+namespace ListingScraper.Scraping
 {
     public interface IListingPageScraper
     {

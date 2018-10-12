@@ -1,7 +1,7 @@
 ﻿using System;
 using ListingScraper.Entities.Enums;
 
-namespace ListingScraper.Domain
+namespace ListingScraper.Scraping
 {
     public class ListingItemPageScraperProvider : IListingItemPageScraperProvider
     {

@@ -1,6 +1,6 @@
 ﻿using ListingScraper.Entities;
 
-namespace ListingScraper.Domain
+namespace ListingScraper.Scraping
 {
     public interface IListingItemPageScraper
     {

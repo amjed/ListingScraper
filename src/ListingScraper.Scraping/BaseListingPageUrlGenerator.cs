@@ -1,4 +1,4 @@
-﻿namespace ListingScraper.Domain
+﻿namespace ListingScraper.Scraping
 {
     public abstract class BaseListingPageUrlGenerator: IListingPageUrlGenerator
     {

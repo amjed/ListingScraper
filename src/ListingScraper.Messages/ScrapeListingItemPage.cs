@@ -6,7 +6,7 @@ namespace ListingScraper.Messages
     public class ScrapeListingItemPage
     {
         public Guid RequestId { get; set; }
-        public Guid PageId { get; set; }
         public Source Source { get; set; }
+        public string Html { get; set; }
     }
 }

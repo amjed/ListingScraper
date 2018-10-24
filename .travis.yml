@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+solution: src/ListingScraper.sln
+dotnet: 2.1
+script:
+  - cd src
+  - dotnet restore
+  - dotnet build --configuration Release
+  - find *.Tests/*.csproj | xargs -L1 dotnet test --verbosity q --no-build --no-restore --configuration Release

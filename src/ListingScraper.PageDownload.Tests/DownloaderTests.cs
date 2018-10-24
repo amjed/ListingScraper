@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using ListingScraper.Common.Exceptions;
 using ListingScraper.Common.Messages;
 using ListingScraper.PageDownload.Validation;
@@ -17,6 +18,7 @@ namespace ListingScraper.PageDownload.Tests
         private readonly Downloader _sut;
         private readonly string _testHtmlContent;
         private readonly Mock<HttpMessageHandler> _mockMessageHandler;
+        private static char DirectorySeperator = RuntimeInformation.IsOSPlatform(OSPlatform.Linux)? '/' : '\\';
 
         public DownloaderTests()
         {
@@ -25,7 +27,7 @@ namespace ListingScraper.PageDownload.Tests
                 .Setup(m => m.Validate(It.IsAny<string>()))
                 .Verifiable();
 
-            _testHtmlContent = File.ReadAllText(@"TestData\sample.html");
+            _testHtmlContent = File.ReadAllText($"TestData{DirectorySeperator}sample.html");
             _mockMessageHandler = new Mock<HttpMessageHandler>();
             _sut = new Downloader(mockValidator.Object, new HttpClient(_mockMessageHandler.Object));
         }

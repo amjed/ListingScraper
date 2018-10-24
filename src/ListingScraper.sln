@@ -23,8 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWS", "AWS", "{60C3CD68-944
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.Handlers", "ListingScraper.Handlers\ListingScraper.Handlers.csproj", "{DE4FB74F-D7BF-42AE-ABE0-F3391ABA33A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.Host.Storage", "ListingScraper.Host.Storage\ListingScraper.Host.Storage.csproj", "{17416557-FE17-4A17-AF01-96D103AB1905}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Routing", "Routing", "{405CCFDF-CE0C-4D30-96F4-EB2608544A7D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.Routing.Tests", "ListingScraper.Routing.Tests\ListingScraper.Routing.Tests.csproj", "{9D464187-6FD5-4BD6-8EA6-5013B278F07C}"
@@ -43,7 +41,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.PageDownload
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.Common", "ListingScraper.Common\ListingScraper.Common.csproj", "{80F1C639-8D17-41AC-A013-08F7DB797DB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListingScraper.Common.Tests", "ListingScraper.Common.Tests\ListingScraper.Common.Tests.csproj", "{93D232BE-977F-4107-8122-740644316D1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.Common.Tests", "ListingScraper.Common.Tests\ListingScraper.Common.Tests.csproj", "{93D232BE-977F-4107-8122-740644316D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{0D062B40-697E-4187-B08B-C790BD385444}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.DataAccess", "ListingScraper.DataAccess\ListingScraper.DataAccess.csproj", "{59D3B583-3A00-4E3D-A0BD-FEA22E5D327C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.DataAccess.Tests", "ListingScraper.DataAccess.Tests\ListingScraper.DataAccess.Tests.csproj", "{BE46B0EA-936A-491A-8A28-B57B16AF8454}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListingScraper.Database", "ListingScraper.Database\ListingScraper.Database.csproj", "{AB4D7F90-BFC6-4D17-83E3-1CF7AFFFE5C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +93,6 @@ Global
 		{DE4FB74F-D7BF-42AE-ABE0-F3391ABA33A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE4FB74F-D7BF-42AE-ABE0-F3391ABA33A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE4FB74F-D7BF-42AE-ABE0-F3391ABA33A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17416557-FE17-4A17-AF01-96D103AB1905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17416557-FE17-4A17-AF01-96D103AB1905}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17416557-FE17-4A17-AF01-96D103AB1905}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17416557-FE17-4A17-AF01-96D103AB1905}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D464187-6FD5-4BD6-8EA6-5013B278F07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D464187-6FD5-4BD6-8EA6-5013B278F07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D464187-6FD5-4BD6-8EA6-5013B278F07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -119,6 +121,18 @@ Global
 		{93D232BE-977F-4107-8122-740644316D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93D232BE-977F-4107-8122-740644316D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93D232BE-977F-4107-8122-740644316D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D3B583-3A00-4E3D-A0BD-FEA22E5D327C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D3B583-3A00-4E3D-A0BD-FEA22E5D327C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D3B583-3A00-4E3D-A0BD-FEA22E5D327C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D3B583-3A00-4E3D-A0BD-FEA22E5D327C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE46B0EA-936A-491A-8A28-B57B16AF8454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE46B0EA-936A-491A-8A28-B57B16AF8454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE46B0EA-936A-491A-8A28-B57B16AF8454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE46B0EA-936A-491A-8A28-B57B16AF8454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4D7F90-BFC6-4D17-83E3-1CF7AFFFE5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4D7F90-BFC6-4D17-83E3-1CF7AFFFE5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4D7F90-BFC6-4D17-83E3-1CF7AFFFE5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4D7F90-BFC6-4D17-83E3-1CF7AFFFE5C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +146,9 @@ Global
 		{92C91F70-E907-408D-81C9-079274B4F871} = {99643808-E077-4639-8657-C620FB489AC5}
 		{CA6AA487-FE56-4287-862D-B158B1472010} = {99643808-E077-4639-8657-C620FB489AC5}
 		{FC81D179-BEF2-488A-9429-F629BD60912E} = {B1E6575C-147F-4DA4-9AC3-D49C5F5A1BD5}
+		{59D3B583-3A00-4E3D-A0BD-FEA22E5D327C} = {0D062B40-697E-4187-B08B-C790BD385444}
+		{BE46B0EA-936A-491A-8A28-B57B16AF8454} = {0D062B40-697E-4187-B08B-C790BD385444}
+		{AB4D7F90-BFC6-4D17-83E3-1CF7AFFFE5C9} = {0D062B40-697E-4187-B08B-C790BD385444}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F30AA617-AD4E-45DC-A4D8-A85D32B7C3D8}
